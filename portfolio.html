@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+    body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 30px;
+    }
+    h2 {
+        margin-bottom: 10px;
+    }
+    nav a {
+        color: blue;
+        text-decoration: underline;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 20px;
+        object-fit: cover;
+    }
+    h3, h4 {
+        margin-bottom: 5px;
+    }
+    ul {
+        margin-top: 0;
+        padding-left: 20px;
+    }
+    .portfolio-gallery {
+        display: flex;
+        gap: 5px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .portfolio-gallery img {
+        width: 250px;
+        height: auto;
+        border: 1px solid #ddd;
+    }
+    .form-group {
+        margin-bottom: 5px;
+    }
+    label {
+        display: inline-block;
+        width: 60px;
+        vertical-align: top;
+    }
+    input[type="text"], input[type="email"] {
+        width: 150px;
+    }
+    textarea {
+        width: 150px;
+        height: 40px;
+    }
+    button {
+        margin-top: 5px;
+        margin-left: 60px;
+    }
+</style>
+</head>
+<body>
+
+<h2>Welcome to My Portfolio</h2>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<img src="https://ui-avatars.com/api/?name=Budi+SJ&background=e0f2fe&color=000&rounded=true" alt="Foto Profile Budi" class="profile-pic">
+
+<h3>Budi SJ</h3>
+<p>Hi, I'm Budi SJ, a passionate web developer.</p>
+
+<h4>Skills</h4>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+</ul>
+
+<h4>Projects</h4>
+<ul>
+    <li>Sistem Informasi Pajak</li>
+    <li>Software Akuntansi</li>
+    <li>Website Perusahaan</li>
+</ul>
+
+<div class="portfolio-gallery">
+    <img src="https://via.placeholder.com/300x200.png?text=Portfolio+1" alt="Portfolio 1">
+    <img src="https://via.placeholder.com/300x200.png?text=Portfolio+2" alt="Portfolio 2">
+    <img src="https://via.placeholder.com/300x200.png?text=Portfolio+3" alt="Portfolio 3">
+</div>
+
+<h4>Contact</h4>
+<form>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
