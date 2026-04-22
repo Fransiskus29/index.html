@@ -3,119 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>Portfolio - Mr.ghost</title>
 <style>
     body {
-        font-family: "Times New Roman", Times, serif;
-        margin: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 30px;
     }
-    h2 {
-        margin-bottom: 10px;
+    header {
+        border-bottom: 2px solid #00ffcc;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
     }
     nav a {
-        color: blue;
+        color: #00ffcc;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    nav a:hover {
         text-decoration: underline;
-        margin-right: 10px;
-        font-size: 14px;
+        color: #ffffff;
     }
-    .profile-pic {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin-top: 20px;
-        object-fit: cover;
-    }
-    h3, h4 {
-        margin-bottom: 5px;
-    }
-    ul {
-        margin-top: 0;
-        padding-left: 20px;
-    }
-    .portfolio-gallery {
+    .profile {
         display: flex;
-        gap: 5px;
-        margin-top: 15px;
+        align-items: center;
+        gap: 25px;
         margin-bottom: 30px;
     }
-    .portfolio-gallery img {
-        width: 250px;
-        height: auto;
-        border: 1px solid #ddd;
+    .profile img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #00ffcc;
+        object-fit: cover;
     }
-    .form-group {
+    h1 {
+        color: #00ffcc;
         margin-bottom: 5px;
+        margin-top: 0;
+    }
+    p.subtitle {
+        color: #aaaaaa;
+        margin-top: 0;
+        font-size: 18px;
+    }
+    h2 {
+        color: #00ffcc;
+        margin-top: 30px;
+    }
+    ul {
+        list-style-type: square;
+        padding-left: 20px;
+        line-height: 1.6;
+    }
+    .gallery {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+    .gallery img {
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+        border: 1px solid #333;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+    }
+    .gallery img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        border-color: #00ffcc;
+    }
+    .contact-form {
+        background: #1e1e1e;
+        padding: 25px;
+        border-radius: 8px;
+        max-width: 400px;
+        border: 1px solid #333;
     }
     label {
-        display: inline-block;
-        width: 60px;
-        vertical-align: top;
+        display: block;
+        margin-bottom: 5px;
+        color: #cccccc;
     }
-    input[type="text"], input[type="email"] {
-        width: 150px;
-    }
-    textarea {
-        width: 150px;
-        height: 40px;
+    input, textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        background: #2a2a2a;
+        color: white;
+        border: 1px solid #444;
+        border-radius: 4px;
+        box-sizing: border-box;
     }
     button {
-        margin-top: 5px;
-        margin-left: 60px;
+        background: #00ffcc;
+        color: #000;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #00ccaa;
     }
 </style>
 </head>
 <body>
 
-<h2>Welcome to My Portfolio</h2>
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-</nav>
-
-<img src="https://ui-avatars.com/api/?name=Budi+SJ&background=e0f2fe&color=000&rounded=true" alt="Foto Profile Budi" class="profile-pic">
-
-<h3>Budi SJ</h3>
-<p>Hi, I'm Budi SJ, a passionate web developer.</p>
-
-<h4>Skills</h4>
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Python</li>
-</ul>
-
-<h4>Projects</h4>
-<ul>
-    <li>Sistem Informasi Pajak</li>
-    <li>Software Akuntansi</li>
-    <li>Website Perusahaan</li>
-</ul>
-
-<div class="portfolio-gallery">
-    <img src="https://via.placeholder.com/300x200.png?text=Portfolio+1" alt="Portfolio 1">
-    <img src="https://via.placeholder.com/300x200.png?text=Portfolio+2" alt="Portfolio 2">
-    <img src="https://via.placeholder.com/300x200.png?text=Portfolio+3" alt="Portfolio 3">
+<div class="profile">
+    <img src="https://ui-avatars.com/api/?name=Mr+Ghost&background=00ffcc&color=000&rounded=true&bold=true" alt="Profile Mr.ghost">
+    <div>
+        <h1>Mr.ghost</h1>
+        <p class="subtitle">Mahasiswa Teknik Informatika Semester 4 | Jogja - Mentawai</p>
+    </div>
 </div>
 
-<h4>Contact</h4>
-<form>
-    <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-    </div>
-    <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-    </div>
-    <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-    </div>
-    <button type="submit">Submit</button>
-</form>
+<h2>Technical Skills</h2>
+<ul>
+    <li>Python & Streamlit</li>
+    <li>SQL Database Management</li>
+    <li>COBOL</li>
+</ul>
+
+<h2>Projects & Activities</h2>
+<ul>
+    <li>Pengembangan Website Pasar Mentawai</li>
+    <li>Analisis Market Kripto (Bitcoin, Solana)</li>
+    <li>Hardware Setup & Troubleshooting (MSI Claw, TUF Gaming)</li>
+</ul>
+
+<h2>Portfolio Preview</h2>
+<div class="gallery">
+    <img src="https://picsum.photos/id/0/300/200" alt="Setup Laptop">
+    <img src="https://picsum.photos/id/119/300/200" alt="Hardware Code">
+    <img src="https://picsum.photos/id/180/300/200" alt="Tech Screen">
+</div>
+
+<h2>Contact Me</h2>
+<div class="contact-form">
+    <form>
+        <label>Name:</label>
+        <input type="text" name="name">
+        
+        <label>Email:</label>
+        <input type="email" name="email">
+        
+        <label>Message:</label>
+        <textarea name="message" rows="4"></textarea>
+        
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</div>
 
 </body>
 </html>
