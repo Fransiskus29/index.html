@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | The Quiet Ritual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="container nav-inner">
+            <a href="index.html" class="brand">THE QUIET RITUAL</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+            </ul>
+            <a class="bag-button" href="products.html" aria-label="Lihat produk">
+                <span class="material-symbols-outlined">shopping_bag</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container page-header">
+            <span class="eyebrow">Products & Services</span>
+            <h1>Curated collection for your daily ritual.</h1>
+            <p>Pilihan biji kopi, alat seduh, dan layanan roasting untuk membantu Anda menciptakan cangkir kopi yang lebih konsisten dan bermakna.</p>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <div>
+                    <h2>Whole Beans</h2>
+                    <p>Exceptional beans and precision equipment for the discerning daily ritual.</p>
+                </div>
+            </div>
+
+            <article class="featured-product">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1300&q=85" alt="Biji kopi premium Ethiopia Yirgacheffe">
+                </div>
+                <div class="featured-content">
+                    <div class="chip-row">
+                        <span class="chip">Single Origin</span>
+                        <span class="chip">Light Roast</span>
+                    </div>
+                    <h2>Ethiopia Yirgacheffe</h2>
+                    <p>Profil lembut dan kompleks untuk ritual pagi yang tenang. Aroma jasmine, crisp bergamot, dan manis raw honey hadir dalam seduhan yang bersih.</p>
+                    <div class="featured-footer">
+                        <span class="price">Rp 240.000</span>
+                        <a class="button primary" href="about.html#contact">Order Now</a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image tall">
+                        <img src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=900&q=85" alt="Biji kopi Ethiopia Yirgacheffe">
+                        <span class="chip">Light Roast</span>
+                    </div>
+                    <h3>Ethiopia Yirgacheffe</h3>
+                    <p>Jasmine, bergamot, honey.</p>
+                    <span class="price">Rp 240.000</span>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image tall">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=900&q=85" alt="Kemasan kopi Colombia Supremo">
+                        <span class="chip">Medium Roast</span>
+                    </div>
+                    <h3>Colombia Supremo</h3>
+                    <p>Caramel, red apple, cocoa.</p>
+                    <span class="price">Rp 220.000</span>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image tall">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=85" alt="Ritual espresso Sumatra Mandheling">
+                        <span class="chip">Dark Roast</span>
+                    </div>
+                    <h3>Sumatra Mandheling</h3>
+                    <p>Dark chocolate, cedar, earth.</p>
+                    <span class="price">Rp 260.000</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <div>
+                    <h2>Services</h2>
+                    <p>Layanan untuk rumah, kantor, dan bisnis kecil yang ingin menyajikan kopi lebih baik.</p>
+                </div>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <span class="material-symbols-outlined">inventory_2</span>
+                    <h3>Subscription</h3>
+                    <p>Paket langganan kopi bulanan yang disesuaikan dengan preferensi roast dan metode seduh Anda.</p>
+                </article>
+                <article class="service-card">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Custom Roast</h3>
+                    <p>Profil roasting khusus untuk kebutuhan kantor, cafe kecil, atau event komunitas.</p>
+                </article>
+                <article class="service-card">
+                    <span class="material-symbols-outlined">menu_book</span>
+                    <h3>Brew Guide</h3>
+                    <p>Konsultasi resep seduh agar hasil ekstraksi lebih konsisten, bersih, dan sesuai karakter biji.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container newsletter-grid">
+                <div>
+                    <span class="eyebrow">Need recommendation?</span>
+                    <h2>Ask us for the right beans.</h2>
+                    <p>Ceritakan metode seduh dan preferensi rasa Anda. Kami akan bantu memilih origin yang paling cocok.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email address" aria-label="Email address">
+                    <button type="submit">Contact</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="brand">THE QUIET RITUAL</a>
+                <p>© 2026 The Quiet Ritual. Crafted for the senses.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <span>Explore</span>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="products.html">Products</a>
+                </div>
+                <div>
+                    <span>Support</span>
+                    <a href="about.html#contact">Contact</a>
+                    <a href="products.html">Services</a>
+                    <a href="about.html">Profile</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
